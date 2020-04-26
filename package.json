@@ -1,0 +1,22 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nkimoto/note.git",
+  "author": "nkimoto <kimoppy126@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "vuepress": "^1.4.1",
+    "vuepress-plugin-mathjax": "^1.2.8",
+    "vuepress-plugin-social-share": "^0.2.1"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs --host 127.0.0.1",
+    "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vue-feather-icons": "^5.0.0"
+  }
+}
