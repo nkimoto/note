@@ -129,10 +129,11 @@ export default {
     border-bottom 0px
     margin-bottom 0px
 .ui-post-title
-  font-family PT Serif, Serif
   font-size 28px
   border-bottom 0
   a
+    font-family NotoSansTC
+    font-weight 500
     cursor pointer
     color $darkTextColor
     transition all 0.2s

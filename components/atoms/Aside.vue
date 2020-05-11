@@ -19,13 +19,15 @@ export default {
 </script>>
 <style lang="stylus">
 .aside
-  padding 2rem
+  padding 1rem 2rem
   box-shadow 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.07)
 .widget-title
+  font-family NotoSansJP
+  font-weight: 700;
   position relative
   margin-bottom 28px
   &:after
-    background-color #009688
+    background-color $asideBarUnderColor
     content ""
     position absolute
     width 50px;

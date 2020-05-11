@@ -15,9 +15,9 @@ export default {
 .blog-tag
   display inline-flex
   align-items center
-  height 45px
+  height 36px
   word-break break-word
-  font-size 20px
+  font-size 16px
   margin-right 10px
   margin-bottom 10px
   padding 0 15px
@@ -34,7 +34,7 @@ export default {
     color $accentColor !important
     border 1px solid $accentColor
     box-shadow 0 0 5px $accentColor
-@media screen and (max-width: 768px)
+@media screen and (max-width: $MQNarrow)
   .blog-tag
     font-size 14px
     padding 3px 10px

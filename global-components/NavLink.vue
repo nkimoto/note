@@ -55,7 +55,7 @@ export default {
 
 <style lang="stylus">
 .nav-link
-  color $darkTextColor
+  color $headerTextColor
 .nav-link
   &:hover, &.router-link-active
     color $accentColor

@@ -22,13 +22,19 @@ module.exports = themeConfig => {
    * Configure blog plugin
    */
   const defaultBlogPluginOptions = {
-    directories: [
+    directories:[
       {
-        id: 'post',
-        dirname: '_posts',
-        path: '/',
+        id: "en",
+        dirname: "_posts",
+        path: "/",
+        itemPermalink: '/post/:year/:month/:day/:slug',
       },
     ],
+      // {
+      //   id: 'post',
+      //   dirname: '_posts',
+      //   path: '/',
+      // },
     frontmatters: [
       {
         id: 'tag',
@@ -39,6 +45,21 @@ module.exports = themeConfig => {
     ],
     globalPagination: {
       lengthPerPage: 5,
+    },
+    comment: {
+      // Which service you'd like to use
+      service: 'vssue',
+      platform: 'github',
+      // The owner's name of repository to store the issues and comments.
+      owner: 'nkimoto',
+      // The name of repository to store the issues and comments.
+      repo: 'note',
+      labels: [':heart:Vssue', ':mailbox:Comments'],
+      clientId: 'dfc4e159039d4362a255',
+      clientSecret: 'f7d78384bea5981f20dcae317eaedc09e0068fef'
+    },
+    sitemap: {
+      hostname: 'https://kimoton.com'
     },
   }
 
@@ -79,7 +100,7 @@ module.exports = themeConfig => {
   )
 
 
-  /**
+  /*
    * Integrate plugins
    */
 

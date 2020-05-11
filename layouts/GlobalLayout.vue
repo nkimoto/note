@@ -52,6 +52,9 @@ export default {
   margin 0 auto
   display flex
   justify-content space-between
+  @media (max-width: $MQMobile)
+    padding: 100px 15px 20px
+    min-height: calc(100vh - 180px)
   
 .main-area
   flex 1
@@ -59,8 +62,10 @@ export default {
   @media (max-width: $MQMobile)
      width 100%
 .secondary-area
-  width 400px
+  width 300px
   margin 0 10px
+  @media (max-width: $MQNarrow)
+    width 200px
   @media (max-width: $MQMobile)
     display none !important
     padding 100px 15px 20px 15px
