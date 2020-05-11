@@ -1,18 +1,16 @@
 const path = require('path')
 
 module.exports = {
+  title: "kimoton's study note",
   //serviceWorker: true,
   host: 'localhost',
-  title: "Data Science note",
   theme: path.resolve(__dirname, '../../'),
   themeConfig: {
     author: 'kimoton',
-    description: "My note in learning programming language R, Python etc...",
+    description: "My note of learning bioinformatics",
     docsDir: 'docs',
-    editLinks: true,
-    editLinkText: 'Edit this page on GitHub',
     nav: [
-      { text: "About", link: "/about/" },
+      { text: 'About', link: '/about.html' },
     ],
     sidebarDepth: 3,
     sidebar: {
@@ -22,11 +20,38 @@ module.exports = {
         'palette'
       ],
     },
+    footer: {
+      contact: [
+        {
+          type: 'mail',
+          link: 'mailto:kimoppy126@gmail.com',
+        },
+        {
+          type: 'twitter',
+          link: 'https://twitter.com/__kimoton',
+        },
+      ],
+      copyright: [
+        {
+          text: 'Copyright © 2020 kimoton',
+          link: '',
+        },
+      ],
+    },
+    newsletter: {
+      endpoint: 'https://billyyyyy3320.us4.list-manage.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138'
+    },
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
+     */
+    feed: {
+      canonical_base: 'https://127.0.0.1:8080/',
+    },
     smoothScroll: true,
+    head: [
+       ['link', { rel: 'icon', type: 'image/jpeg', href: '/kimoton.jpeg' }],
+    ],
   },
-  head: [
-     ['link', { rel: 'icon', type: 'image/jpeg', href: '/kimoton.jpeg' }],
-  ],
   //plugins: [
   //  [
   //  '@vuepress/blog',
