@@ -1,9 +1,9 @@
 const path = require('path')
 
 module.exports = {
-  title: "kimoton's study note",
+  title: "bye~ bye~ bio",
   //serviceWorker: true,
-  host: 'localhost',
+  host: '127.0.0.1',
   theme: path.resolve(__dirname, '../../'),
   themeConfig: {
     author: 'kimoton',
