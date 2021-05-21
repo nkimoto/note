@@ -22,19 +22,14 @@ module.exports = themeConfig => {
    * Configure blog plugin
    */
   const defaultBlogPluginOptions = {
-    directories:[
+    directories: [
       {
-        id: "en",
+        id: "blog",
         dirname: "_posts",
         path: "/",
-        itemPermalink: '/post/:year/:month/:day/:slug',
+        itemPermalink: '/post/:year/:month/:day/:slug/'
       },
     ],
-      // {
-      //   id: 'post',
-      //   dirname: '_posts',
-      //   path: '/',
-      // },
     frontmatters: [
       {
         id: 'tag',
@@ -94,7 +89,6 @@ module.exports = themeConfig => {
     feed: resolvedFeedOptions,
   }
   const blogPluginOptions = Object.assign(
-    {},
     defaultBlogPluginOptions,
     themeConfigPluginOptions
   )
@@ -129,7 +123,7 @@ module.exports = themeConfig => {
     ],
     ['social-share',
       {
-        networks: ['twitter', 'facebook', 'line', ],
+        networks: ['twitter', 'facebook', 'line',],
         twitterUser: '_kimoton',
         fallbackImage: '/kimoton.jpeg',
         autoQuote: true,

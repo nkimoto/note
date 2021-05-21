@@ -20,6 +20,9 @@ module.exports = {
         'palette'
       ],
     },
+    head: [
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ],
     footer: {
       contact: [
         {
@@ -45,29 +48,8 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
      */
     feed: {
-      canonical_base: 'https://127.0.0.1:8080/',
+      canonical_base: 'http://127.0.0.1:8080/',
     },
     smoothScroll: true,
-    head: [
-       ['link', { rel: 'icon', type: 'image/jpeg', href: '/kimoton.jpeg' }],
-    ],
   },
-  //plugins: [
-  //  [
-  //  '@vuepress/blog',
-  //  {
-  //    directories: [
-  //      {
-  //        // Unique ID of current classification
-  //        id: 'post',
-  //        // Target directory
-  //        dirname: '_posts',
-  //        // Path of the `entry page` (or `list page`)
-  //       // path: '/',
-  //      },
-  //    ],
-  //  },
-  //  '@vuepress/medium-zoom'
-  //  ]
-  //],
 };
